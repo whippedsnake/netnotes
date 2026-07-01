@@ -1,7 +1,7 @@
 ---
 title: 🟢 Эксперимент с шаблонами (work in progress)
 weight: 1
-draft: false
+draft: true
 date: 2026-05-28
 tags: ["release", "process", "templates", "docs"]
 ---

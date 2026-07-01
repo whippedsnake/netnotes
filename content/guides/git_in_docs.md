@@ -1,7 +1,7 @@
 ---
 title: 🟢 В каком случае использовать merge и rebase
 weight: 2
-draft: false
+draft: true
 date: 2025-12-23
 tags: ["git", "merge", "rebase", "docs"]
 ---
