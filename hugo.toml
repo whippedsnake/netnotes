@@ -1,0 +1,41 @@
+baseURL = ""
+languageCode = "ru"
+title = "tkhovanova"
+theme = "terminal"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  customCSS = ["/static/css/custom.css"]
+  showMenuItems = 7
+  logoHomeLink = "/"
+  autoCover = true
+  ReadMore = " Читать → "
+
+
+[menu]
+  [[menu.main]]
+    name = "CV"
+    url = "/cv/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Проекты"
+    url = "/projects/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Блог"
+    url = "/blog/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Гайды"
+    url = "/guides/"
+    weight = 4
+
+

@@ -1,0 +1,77 @@
+/* MONSTRIX кастомные стили - безопасное переопределение 
+
+ Скрываем оригинальный текст "Terminal" 
+.logo__text {
+    display: none !important;
+}
+
+/* Добавляем наш SVG логотип вместо текста 
+.logo::after {
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 120 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23000' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='2' y1='6' x2='2' y2='18'/%3E%3Cline x1='2' y1='6' x2='5' y2='12'/%3E%3Cline x1='5' y1='12' x2='8' y2='6'/%3E%3Cline x1='8' y1='6' x2='8' y2='18'/%3E%3C/g%3E%3Cg stroke='%23000' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='15' cy='12' r='5'/%3E%3Ccircle cx='15' cy='12' r='1.5' fill='%23000'/%3E%3C/g%3E%3Cg stroke='%23000' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='25' y1='6' x2='25' y2='18'/%3E%3Cline x1='25' y1='6' x2='31' y2='18'/%3E%3Cline x1='31' y1='6' x2='31' y2='18'/%3E%3C/g%3E%3Cg stroke='%23000' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='37' y1='6' x2='41' y2='6'/%3E%3Cline x1='37' y1='6' x2='37' y2='12'/%3E%3Cline x1='37' y1='12' x2='41' y2='12'/%3E%3Cline x1='41' y1='12' x2='41' y2='18'/%3E%3Cline x1='37' y1='18' x2='41' y2='18'/%3E%3C/g%3E%3Cg stroke='%23000' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='47' y1='6' x2='53' y2='6'/%3E%3Cline x1='50' y1='6' x2='50' y2='18'/%3E%3C/g%3E%3Cg stroke='%23000' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='59' y1='6' x2='59' y2='18'/%3E%3Ccircle cx='62' cy='9' r='3'/%3E%3Cline x1='59' y1='12' x2='62' y2='18'/%3E%3C/g%3E%3Cg stroke='%23000' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='70' y1='6' x2='70' y2='18'/%3E%3C/g%3E%3Cg stroke='%23000' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='76' y1='6' x2='82' y2='18'/%3E%3Cline x1='82' y1='6' x2='76' y2='18'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* Добавляем hover эффект 
+.logo:hover::after {
+    filter: brightness(1.2);
+}
+
+/* Глитч анимация для будущего JS 
+.logo.glitch::after {
+    animation: logoGlitch 0.1s infinite;
+}
+
+@keyframes logoGlitch {
+    0% { filter: hue-rotate(0deg) brightness(1); }
+    25% { filter: hue-rotate(90deg) brightness(1.5); }
+    50% { filter: hue-rotate(180deg) brightness(0.8); }
+    75% { filter: hue-rotate(270deg) brightness(1.2); }
+    100% { filter: hue-rotate(360deg) brightness(1); }
+}
+
+/* Улучшаем отзывчивость на мобильных 
+@media (max-width: 768px) {
+    .logo::after {
+        width: 100px;
+        height: 20px;
+    }
+}
+
+/* Дополнительные стили для красоты 
+.header {
+    border-bottom: 2px solid var(--accent, #f39c12);
+}
+
+ Подсветка активного пункта меню 
+.menu__inner a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+ Фикс мобильного меню 
+@media (max-width: 684px) {
+    ul.menu__dropdown[class] {
+        min-width: 250px !important;
+        width: max-content !important;
+        padding: 15px !important;
+        box-sizing: border-box !important;
+    }
+    
+    ul.menu__dropdown[class] > li {
+        margin-bottom: 12px !important;
+    }
+    
+    ul.menu__dropdown[class] > li a {
+        font-size: 18px !important;
+        white-space: nowrap !important;
+        padding: 8px 10px !important;
+        word-break: keep-all !important;
+    }
+}
+*/
