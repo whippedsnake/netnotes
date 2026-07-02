@@ -15,7 +15,8 @@ theme = "terminal"
   logoHomeLink = "/"
   autoCover = true
   ReadMore = " Читать → "
-
+  fullWidthTheme = false
+  centerTheme = true
 
 [menu]
 

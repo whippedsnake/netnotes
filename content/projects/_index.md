@@ -69,22 +69,35 @@ title: Проекты
 - RU [Вышел CS-Cart 4.18.1 с новой панелью администратора и поддержкой маркировки](https://www.cs-cart.ru/blog/cs-cart-4-18-1/)
 
 
-## Личный проект
+## Личный проект netnotes.xyz
 
-Развитие собственного портфолио и эксперименты над VPS.
+Персональный сайт-портфолио, построенный как полноценный docs-as-code проект.
 
 → [Исходный код](https://github.com/whippedsnake/netnotes)
+
+
+### Стек
+
+- Hugo Extended
+- Markdown
+- Git
+- GitHub Actions
+- nginx
+- Ubuntu Server
+- Let's Encrypt
+- rsync
+- SSH deployment
 
 ### Реализовано
 
 - Hugo - static site generator.
-- Форк темы Terminal, изменен стиль.
-- Git submodules (тема).
-- Nginx deployment.
-- HTTPS через Let's Encrypt.
-- VPS на Ubuntu Server.
-- GitHub Actions CI/CD.
-- Отдельный пользователь для деплоя.
+- Форкнула тему Terminal, изменила её.
+- Git submodules (тема Terminal).
+- Развертывание сайта через nginx.
+- Выпустила SSL через Let's Encrypt (Certbot).
+- Настроила VPS на Ubuntu Server.
+- Настроила GitHub Actions для автоматического деплоя при изменениях в основной ветке.
+- Разделила пользователей сервера, создала отдельного для деплоя.
 - Минимальный харденинг сервера.
 
 
