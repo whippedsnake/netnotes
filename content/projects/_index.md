@@ -93,7 +93,7 @@ title: Проекты
 - Hugo - static site generator.
 - Форкнула тему Terminal, изменила её.
 - Git submodules (тема Terminal).
-- Развертывание сайта через nginx.
+- Развертывание сайта с nginx.
 - Выпустила SSL через Let's Encrypt (Certbot).
 - Настроила VPS на Ubuntu Server.
 - Настроила GitHub Actions для автоматического деплоя при изменениях в основной ветке.
